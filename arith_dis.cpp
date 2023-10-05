@@ -15,7 +15,10 @@ public:
         cin>>a>>b;
         cout<<a+b<<endl;
     }
-    
+    ~arith()
+    {
+        cout<<"destructor is running: ";
+    }
 
     void fun1()
     {

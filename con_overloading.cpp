@@ -35,4 +35,3 @@ public:
     a1.fun1();
     a1.fun2("class");
     return 0;
- }

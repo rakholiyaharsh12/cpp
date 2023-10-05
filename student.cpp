@@ -9,7 +9,7 @@ private:
     string name;
 
 public:
-    void setname(int n)
+    void setname(string n)
     {
         name = n;
     }
