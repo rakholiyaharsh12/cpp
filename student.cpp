@@ -4,91 +4,93 @@ using namespace std;
 class student
 {
 private:
-    int guj, eng, sci, com, total;
-    float per;
+    int eng, hin, guj, math, total;
     string name;
+    float per;
 
 public:
     void setname(string n)
     {
         name = n;
     }
-    void setmarks(int g, int e, int s, int c)
+    void setmarks(int e, int h, int g, int m)
     {
-        guj = g, eng = e, sci = s, com = c;
+        eng = e, hin = h, guj = g, math = m;
     }
-    int totalmarks(int g, int e, int s, int c)
+    int totalmarks(int e, int h, int g, int m)
     {
-        total = g + e + s + c;
+        total = e + h + g + m;
         return total;
     }
-    int per(int total)
+
+    int percentage(int total)
     {
-        per = total * 100\400;
+        per = total * 100 / 400;
         return per;
     }
 
     void getname()
     {
+
         cout << name << endl;
     }
+
     void getmarks()
     {
-        cout << guj << "\n"
-             << eng << "\n"
-             << sci << "\n"
-             << com << endl;
+        cout << eng << "\n"
+             << hin << "\n"
+             << guj << "\n"
+             << math << endl;
     }
 };
 
 int main()
 {
-    int g[2], e[2], s[2], c[2], t[2];
-    string name[2];
-    float per[2];
+    int eng[5], hin[5], guj[5], math[5], total[5];
+    string name[5];
+    float per[5];
 
     for (int i = 0; i <= 1; i++)
     {
-        cout << "enter name:";
+
+        cout << "Enter Your Name:";
         cin >> name[i];
 
-        cout << "enter guj:";
-        cin >> g[i];
+        cout << "Enter ENGLISH Mark:";
+        cin >> eng[i];
 
-        cout << "enter eng:";
-        cin >> e[i];
+        cout << "ENter Hindi Mark :";
+        cin >> hin[i];
 
-        cout >> "enter sci:";
-        cin >> s[i];
+        cout << "Enter Gujarati Mark :";
+        cin >> guj[i];
 
-        cout << "enter com:";
-        cin >> c[i];
+        cout << "Enter Math Marks : ";
+        cin >> math[i];
+
     }
-
+    
     student s1;
-    s1.setname(n[0]);
-    s1.setmarks(g[0], e[0], s[0], c[0]);
+
+    s1.setname(name[0]);
+    s1.setmarks(eng[0], hin[0], guj[0], math[0]);
 
     s1.getname();
     s1.getmarks();
 
     student s2;
-    s2.setname(n[1]);
-    s2.setmarks(g[1], e[1], s[1], c[1]);
+    s2.setname(name[1]);
+    s2.setmarks(eng[1], hin[1], guj[1], math[1]);
 
     s2.getname();
     s2.getmarks();
 
-
-
     for (int i = 0; i <= 1; i++)
-
     {
-        t[i] = s1.totalmarks(g[i], e[i], s[i], c[i]);
-        cout << "total:" << t[i] << endl;
-        p[i] = s1.per(t[i]);
-        cout << "per:" << p[i] << endl;
+        total[i] = s1.totalmarks(eng[i], hin[i], guj[i], math[i]);
+        cout << "Total:" << total[i] << endl;
+        per[i] = s1.percentage(total[i]);
+        cout << "Percentage:" << per[i] << endl;
     }
-
     return 0;
 }
