@@ -1,21 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 void century()
 {
     int year;
-     
-    cout<<"enter year";
+
+    cout << "enter year";
     cin >> year;
 
-    if(year%100==0)
-{
-    cout<<("century year");
-}
-else
+    if (year % 100 == 0)
     {
-           cout<<"not century year";
-    }  
-    
+        cout << ("century year");
+    }
+    else
+    {
+        cout << "not century year";
+    }
 }
 int main()
 {

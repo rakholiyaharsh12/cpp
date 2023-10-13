@@ -1,46 +1,45 @@
 #include <iostream>
 using namespace std;
-int english,gujarati,maths,total,marks,percent;
+int english, gujarati, maths, total, marks, percent;
 void get()
 {
-     cout<<"enter marks";
-     cin>>english;
-     cin>>gujarati;
-     cin>>maths;
+  cout << "enter marks";
+  cin >> english;
+  cin >> gujarati;
+  cin >> maths;
 }
-  void ha()
+void ha()
+{
+  total = english + gujarati + maths;
+  percent = (total * 100) / 300;
+}
+void rsh()
+{
+  if (percent > 75)
   {
-    total=english+gujarati+maths;
-    percent=(total * 100)/300;
+    cout << " GRADE A";
   }
-  void rsh()
+  else if (percent > 60 && percent <= 75)
   {
-  if(percent > 75)
-  {
-    cout<<" GRADE A";
+    cout << "GRADE B";
   }
-  else if(percent > 60 && percent <= 75)
+  else if (percent > 45 && percent <= 60)
   {
-    cout<<"GRADE B";
-  }
-  else if(percent > 45 && percent <= 60)
-  {
-    cout<<"GRADE C";
+    cout << "GRADE C";
   }
   else if (percent > 35 && percent <= 45)
   {
-    cout<<"GRADE D";
-  } 
+    cout << "GRADE D";
+  }
 
   else if (percent <= 35)
   {
-    cout<<"FAILL";
+    cout << "FAILL";
   }
-  }
+}
 int main()
 {
-    get();
-     ha();
-     rsh();
+  get();
+  ha();
+  rsh();
 }
-        

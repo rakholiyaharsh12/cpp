@@ -1,26 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 void multiple()
 {
-int num;
+        int num;
 
-cout<< "enter number";
-cin>> num;
-if(num%5==0 && num%7==0)
-{
-    
-        cout<<"multiple";
-    
-}
+        cout << "enter number";
+        cin >> num;
+        if (num % 5 == 0 && num % 7 == 0)
+        {
+
+                cout << "multiple";
+        }
         else
         {
-            cout<<"not multiple";
+                cout << "not multiple";
         }
-    
 }
 int main()
 {
-multiple();
-return 0;
-
+        multiple();
+        return 0;
 }

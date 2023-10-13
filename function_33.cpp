@@ -4,12 +4,12 @@ int getMarks()
 {
     int eng, guj, maths, total;
 
-    cout<< "enter english marks:";
-    cin>> eng;
-    cout<<"enter gujarati marks: ";
-    cin>> guj;
-    cout<<"enter maths marks: ";
-    cin>> maths;
+    cout << "enter english marks:";
+    cin >> eng;
+    cout << "enter gujarati marks: ";
+    cin >> guj;
+    cout << "enter maths marks: ";
+    cin >> maths;
 
     total = eng + guj + maths;
 
@@ -25,8 +25,8 @@ int calculate(int totalMarks)
 
 void showResult(int totalMarks, int percentage)
 {
-    cout<<"\ntotal" << totalMarks;
-    cout<<"\npercentage" << percentage;
+    cout << "\ntotal" << totalMarks;
+    cout << "\npercentage" << percentage;
 }
 
 int main()
@@ -34,5 +34,4 @@ int main()
     int getTotal = getMarks();
     int getPercent = calculate(getTotal);
     showResult(getTotal, getPercent);
-
 }

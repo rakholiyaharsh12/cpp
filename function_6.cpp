@@ -1,17 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 void num()
 {
-    int a,i;
+    int a, i;
 
-    cout<<"entera value";
-    cin >>a;
+    cout << "entera value";
+    cin >> a;
 
-    for(i=0;i<a;i++)
+    for (i = 0; i < a; i++)
     {
-        cout<<" hello world\n";
+        cout << " hello world\n";
     }
-    cout<<("i: %d",i);
+    cout << ("i: %d", i);
 }
 int main()
 {
