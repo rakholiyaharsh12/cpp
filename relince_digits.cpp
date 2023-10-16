@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 class customer
 
@@ -18,10 +17,16 @@ public:
       cout << " --------- || relince digital || ---------\n";
       cout << "enter customer name : ";
       cin >> name;
-      cout << "enter your contact number: ";
-      cin >> contact_number;
+      do
+      {
+         cout << "enter your contact number: ";
+         cin >> contact_number;
+         if (contact_number.size() != 10)
+         {
+            cout << "wrong number: " << endl;
+         }
+      } while (contact_number.size() != 10);
    }
-
    void costinformation()
    {
       cout << "\n\t name: " << name << endl;
@@ -90,7 +95,7 @@ public:
    {
       if (bill_amt > 400)
       {
-         return discount = (bill_amt * 20) / 100;
+         return discount = (bill_amt * 5) / 100;
       }
 
       else
@@ -114,10 +119,10 @@ public:
    {
       Show_bill_Items();
       cout << "==================================================" << endl;
-      cout << "|\t total Order price  : " << Show_Bill_Amt() <<"\t|"<< endl;
-      cout << "|\t discount           : " << Show_disc()     <<"\t\t\t|"<<endl;
-      cout << "|\t gst                : " << Show_GST()      <<"\t|"<<endl;
-      cout << "|\t net bill is        : " << Show_Net_bill() <<"\t\t|"<< endl;
+      cout << "|\t total Order price  : " << Show_Bill_Amt() << "\t|" << endl;
+      cout << "|\t discount           : " << Show_disc() << "\t\t\t|" << endl;
+      cout << "|\t gst                : " << Show_GST() << "\t|" << endl;
+      cout << "|\t net bill is        : " << Show_Net_bill() << "\t\t|" << endl;
       cout << "==================================================" << endl;
       cout << "\n\t ------**------ || Thank you for  || ------**------ ";
    }
@@ -146,8 +151,8 @@ int main()
    // menu
 
    cout << "\n\t\t\t --------- || Menu || --------- \n";
-   cout << "\n\t\t\t [1]  ONEPLUS EARBUDS : RS. 1290.00  /- ";
-   cout << "\n\t\t\t [2] ALEXA SMART SPEAKERS : RS. 1900.00 /- ";
+   cout << "\n\t\t\t [1]ONEPLUS EARBUDS : RS. 1290.00  /- ";
+   cout << "\n\t\t\t [2]  ALEXA SMART SPEAKERS : RS. 1900.00 /- ";
    cout << "\n\t\t\t [3] APPLE AIRPODS PRO : RS. 11900.00  /- ";
    cout << "\n\t\t\t [4]  PIGEON KETTLE : RS. 2990.00/- ";
    cout << "\n\t\t\t [5]LIFELONG DRY LRON : RS. 1290.00 /-";
