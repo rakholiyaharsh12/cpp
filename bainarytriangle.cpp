@@ -18,7 +18,7 @@ class Triangle
         return l * w;
     }
     Triangle operator*(Triangle &s)
-    {
+     {
         Triangle t;
         t.l = l * s.l;
         t.w = w * s.w;

@@ -13,7 +13,7 @@ void setdata(int a,int b,int c)
 }
 int getvolume()
 {
-    return l* w*h;
+    return l* w * h;
 }
 box operator++(int)
 {
