@@ -15,6 +15,7 @@ class check
     
 };
 
+
 int check2(check c)
 {
         if(c.a>c.b)
