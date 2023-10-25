@@ -87,41 +87,41 @@ public:
    /*
       new decleration continue....,
    */
-    int item6()     
-   {
-      cout << "\n\tEnter qty : ";
-      cin >> qty;
-      ditem[5] = "jbl speaker 15000 /-";
-      return bill = bill + qty * 15000.00;
-   }
-       int item7()     
-   {
-      cout << "\n\tEnter qty : ";
-      cin >> qty;
-      ditem[6] = "LG refrigerators  40000/-";
-      return bill = bill + qty * 40000.00;
-   }
-          int item8()     
-   {
-      cout << "\n\tEnter qty : ";
-      cin >> qty;
-      ditem[7] = "ultimate party speaker 11000/-";
-      return bill = bill + qty * 11000.00;
-   }
-          int item9()     
-   {
-      cout << "\n\tEnter qty : ";
-      cin >> qty;
-      ditem[8] = "Apple ipad 9th gen. 50000/-";
-      return bill = bill + qty * 50000.00;
-   }
-          int item10()     
-   {
-      cout << "\n\tEnter qty : ";
-      cin >> qty;
-      ditem[9] = "hp laptop 50000 /-";
-      return bill = bill + qty * 50000.00;
-   }
+   //  int item6()     
+   // {
+   //    cout << "\n\tEnter qty : ";
+   //    cin >> qty;
+   //    ditem[5] = "jbl speaker 15000 /-";
+   //    return bill = bill + qty * 15000.00;
+   // }
+   //     int item7()     
+   // {
+   //    cout << "\n\tEnter qty : ";
+   //    cin >> qty;
+   //    ditem[6] = "LG refrigerators  40000/-";
+   //    return bill = bill + qty * 40000.00;
+   // }
+   //        int item8()     
+   // {
+   //    cout << "\n\tEnter qty : ";
+   //    cin >> qty;
+   //    ditem[7] = "ultimate party speaker 11000/-";
+   //    return bill = bill + qty * 11000.00;
+   // }
+   //        int item9()     
+   // {
+   //    cout << "\n\tEnter qty : ";
+   //    cin >> qty;
+   //    ditem[8] = "Apple ipad 9th gen. 50000/-";
+   //    return bill = bill + qty * 50000.00;
+   // }
+   //        int item10()     
+   // {
+   //    cout << "\n\tEnter qty : ";
+   //    cin >> qty;
+   //    ditem[9] = "hp laptop 50000 /-";
+   //    return bill = bill + qty * 50000.00;
+   // }
 
    double Show_Bill_Amt()
    {
@@ -194,9 +194,9 @@ int main()
    cout << "\n\t\t\t [3] APPLE AIRPODS PRO : RS. 11900.00  /- ";
    cout << "\n\t\t\t [4]  PIGEON KETTLE : RS. 2990.00/- ";
    cout << "\n\t\t\t [5]LIFELONG DRY LRON : RS. 1290.00 /-";
-   cout << "\n\t\t\t [6] jbl speaker 15000 /-";
-   cout << "\n\t\t\t [7] LG refrigerators 40000/-";
-   cout<<  "\n\t\t\t   [8]ultimate party speaker 11000/-";
+   // cout << "\n\t\t\t [6] jbl speaker 15000 /-";
+   // cout << "\n\t\t\t [7] LG refrigerators 40000/-";
+   // cout<<  "\n\t\t\t [8]ultimate party speaker 11000/-";
    cout << "\n\t\t\t Confirm Your Order       [0]  \n";
 
    int choice;
