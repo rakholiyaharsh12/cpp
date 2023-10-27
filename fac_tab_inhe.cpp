@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std; 
 class Base
 {
 protected:
@@ -43,7 +43,7 @@ public:
     }
     void table()
     {
-        for (i = 1; i <= 10; ++i)
+        for (i = 1; i <=10 ; ++i)
         {
             cout << j << " * " << i << " = " << j * i << endl;
         }
@@ -60,5 +60,5 @@ int main()
 
     Derived2 d2;
     d2.setj();
-    d2.table();
+d2.table();
 }
