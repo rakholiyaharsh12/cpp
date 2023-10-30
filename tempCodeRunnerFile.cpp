@@ -1,35 +1,64 @@
-int item6()     
-   // {
-   //    cout << "\n\tEnter qty : ";
-   //    cin >> qty;
-   //    ditem[5] = "jbl speaker 15000 /-";
-   //    return bill = bill + qty * 15000.00;
-   // }
-   //     int item7()     
-   // {
-   //    cout << "\n\tEnter qty : ";
-   //    cin >> qty;
-   //    ditem[6] = "LG refrigerators  40000/-";
-   //    return bill = bill + qty * 40000.00;
-   // }
-   //        int item8()     
-   // {
-   //    cout << "\n\tEnter qty : ";
-   //    cin >> qty;
-   //    ditem[7] = "ultimate party speaker 11000/-";
-   //    return bill = bill + qty * 11000.00;
-   // }
-   //        int item9()     
-   // {
-   //    cout << "\n\tEnter qty : ";
-   //    cin >> qty;
-   //    ditem[8] = "Apple ipad 9th gen. 50000/-";
-   //    return bill = bill + qty * 50000.00;
-   // }
-   //        int item10()     
-   // {
-   //    cout << "\n\tEnter qty : ";
-   //    cin >> qty;
-   //    ditem[9] = "hp laptop 50000 /-";
-   //    return bill = bill + qty * 50000.00;
-   // }
+#include <iostream>
+
+using namespace std;
+
+class bankaccout
+{
+    public: 
+
+    int deposite;
+    int balance;
+    int withdral;
+    int total;
+
+
+    bankaccout(int d, int b, int w, int t)
+    {
+        deposite = d;
+        balance = b;
+        withdral = w;
+        total = t;
+    }
+
+    void balanca()
+    {
+        int d, b;
+        cout << "----------------------------------------\n";
+        cout << "Your Acoout balance is = 1000";
+        cout << "\n";
+        cout << "----------------------------------------\n";
+        cout << "Enter YOur Deposite =";
+        cin >> d;
+        b = 1000 + d;
+        cout << "YOur Total Amout = " << b;
+        cout << "\n--------------------------------------\n";
+    }
+
+    void Withdral()
+    {
+        int b, w;
+        cout << "ENter WIthdral Amount = ";
+        cin >> w;
+
+        if (b <= w)
+        {
+            cout << "\n==> YOu Can't Withdral";
+        }
+
+        else
+        {
+            cout << "\n==> YOu Can Withdral";
+        }
+    }
+};
+
+int main()
+{
+    int a, b, c, d;
+    bankaccout b1(a, b, c, d);
+
+    b1.balanca();
+    b1.Withdral();
+
+    return 0;
+}
